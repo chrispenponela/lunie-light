@@ -4,6 +4,11 @@ export default {
   ssr: false,
   target: 'static',
 
+  server: {
+    host: '0.0.0.0', // default: localhost,
+    timing: false,
+  },
+
   // Use local 404 instead of redirecting to Netlify 404 (https://go.nuxtjs.dev/config-build)
   generate: {
     fallback: true,

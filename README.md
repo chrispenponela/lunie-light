@@ -54,7 +54,7 @@ _If your chain is missing modules or you have changed the Cosmos data model you 
 
 ## How to deploy
 
-On Netlify:
+### On Netlify
 
 1. Add your forked 🍴 repo
 2. Go to "Site Settings" > "Build & Deploy" > "Edit Settings"
@@ -63,5 +63,20 @@ On Netlify:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
 
+### Using Docker
+
+**Running the container**: You can run the image using `make run`, or the below:
+
+```
+docker run -it --rm -e PORT=8080 -e NODE_ENV=production -p 8080:8080 ovrclk/lunie-lite
+```
+
+You can access the applicaiton on http://localhost:8080
+
+**Building the image**: The simplest way you can build a container is using [Buildpacks](https://buildpacks.io), after you install Buildpacks, run `make image` or the below:
+
+```sh
+pack build ovrclk/lunie-lite --builder heroku/buildpacks:18
+```
 
 ## Thank you kindly!
