@@ -4,8 +4,8 @@ export default {
   description: 'Akash is a peer-to-peer cloud computing marketplace',
   logo: `logo.svg`,
   website: 'https://akash.network',
-  apiURL: 'http://127.0.0.1:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
-  rpcURL: 'ws://rpc.v.boz.sh:26657',
+  apiURL: 'http://rpc-edgenet.akashdev.net:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
+  rpcURL: 'ws://rpc-edgenet.akashdev.net:26657',
   stakingDenom: 'AKT',
   coinLookup: [
     {
