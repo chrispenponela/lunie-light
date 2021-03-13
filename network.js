@@ -1,5 +1,5 @@
 export default {
-  id: 'cosmos-hub-testnet',
+  id: 'chrispen',
   name: 'Cosmos Stargate',
   description: 'Akash is a peer-to-peer cloud computing marketplace',
   logo: `logo.svg`,
